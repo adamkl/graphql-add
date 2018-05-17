@@ -1,5 +1,5 @@
 {
-  "name": "@kreczad/graphql-add",
+  "name": "graphql-add",
   "version": "0.0.1",
   "description": "A simple tool for combining graphql queries",
   "main": "./lib/index.js",
