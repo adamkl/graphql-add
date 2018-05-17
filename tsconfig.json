@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "module": "commonjs",
+    "target": "es5",
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "moduleResolution": "node",
+    //"noUnusedLocals": true,
+    "sourceMap": true,
+    "declaration": true,
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "removeComments": false
+  },
+  "exclude": ["node_modules", "test", "lib"]
+}

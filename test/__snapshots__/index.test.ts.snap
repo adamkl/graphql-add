@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should combine more than 2 queries 1`] = `
+"query mergedQuery {
+  person {
+    name
+    age
+    dob
+  }
+}
+"
+`;
+
+exports[`it should combine nested queries 1`] = `
+"query mergedQuery {
+  person {
+    address {
+      street
+      city
+    }
+  }
+}
+"
+`;
+
+exports[`it should combine nested queries with fields at different levels 1`] = `
+"query mergedQuery {
+  person {
+    firstName
+    address {
+      street
+      city
+    }
+    lastName
+  }
+}
+"
+`;
+
+exports[`it should combine queries 1`] = `
+"query mergedQuery {
+  person {
+    name
+    age
+  }
+}
+"
+`;
+
+exports[`it should combine queries with fragment spread 1`] = `
+"query mergedQuery {
+  person {
+    firstName
+    address {
+      street
+      city
+    }
+    ...personFragment
+  }
+}
+
+fragment personFragment on Person {
+  lastName
+}
+"
+`;
+
+exports[`it should combine queries with multiple fragment spreads 1`] = `
+"query mergedQuery {
+  person {
+    firstName
+    address {
+      street
+      city
+      ...cityFragment
+    }
+    ...personFragment
+    ...dobFragment
+  }
+}
+
+fragment personFragment on Person {
+  lastName
+}
+
+fragment cityFragment on City {
+  country
+}
+
+fragment dobFragment on Person {
+  dob
+}
+"
+`;
+
+exports[`it should remove duplicate fields 1`] = `
+"query mergedQuery {
+  person {
+    name
+    age
+  }
+}
+"
+`;

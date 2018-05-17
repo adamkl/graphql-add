@@ -1,0 +1,44 @@
+{
+  "name": "@kreczad/graphql-add",
+  "version": "0.0.1",
+  "description": "A simple tool for combining graphql queries",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "author": "Adam K-L",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "lodash": "^4.17.10"
+  },
+  "peerDependencies": {
+    "graphql": "^0.13.2"
+  },
+  "devDependencies": {
+    "@types/graphql": "^0.13.1",
+    "@types/jest": "^22.2.3",
+    "@types/lodash": "^4.14.108",
+    "@types/node": "^8.10.0",
+    "graphql": "^0.13.2",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.8.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
